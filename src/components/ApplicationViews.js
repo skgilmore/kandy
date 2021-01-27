@@ -15,12 +15,14 @@ export const ApplicationViews = () => {
 
         <LocationProvider>
             <Route path="/locations">
+                <h2>Locations:</h2>
                 <LocationList />
             </Route>
         </LocationProvider>
 
         <ProductProvider>
             <Route path="/products">
+            <h2>Products:</h2>
                 <ProductList />
             </Route>
         </ProductProvider>

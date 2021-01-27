@@ -22,7 +22,7 @@ export const ProductList = () => {
             {console.log("ProductList: Render", products)}
             {
                 products.map((product) => {
-                    return <ProductCard key={product.id} product={product} />
+                    return <ProductCard  key={product.id} product={product} />
                 })
             }
         </div>
