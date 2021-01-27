@@ -8,7 +8,7 @@ import { ProductCard } from "./ProductsCard"
 export const ProductList = () => {
 
     const { products, getProducts } = useContext(ProductsContext)
-
+console.log(products,"products got?")
     //useEffect - reach out to the world for something
     useEffect(() => {
         console.log("ProductsList: useEffect getProducts")
