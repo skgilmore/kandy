@@ -1,6 +1,8 @@
+import { useHistory } from "react-router-dom"
 import React, { useContext, useEffect } from "react"
 import { ProductsContext } from "./ProductsProvider"
 import { ProductCard } from "./ProductsCard"
+
 // import "./Location.css"
 
 
@@ -8,6 +10,8 @@ import { ProductCard } from "./ProductsCard"
 export const ProductList = () => {
 
     const { products, getProducts } = useContext(ProductsContext)
+    // const history = useHistory()
+
 console.log(products,"products got?")
     //useEffect - reach out to the world for something
     useEffect(() => {
@@ -19,6 +23,8 @@ console.log(products,"products got?")
 
     return (
         <div className="products">
+            
+       
             {console.log("ProductList: Render", products)}
             {
                 products.map((product) => {
